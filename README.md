@@ -90,7 +90,25 @@ await client.sendMessage(m.chat, {
 
 ## send productMessage
 ```javascript
-await client.relayMessage(m.chat/* di sini koma keyboard w rusak */{
-  // lanjut nanti benerin keyboard dulu :v
+await client.relayMessage(m.chat, {
+  productMessage {
+    title: "7eppeli.pdf",
+    description: "zZZ...",
+    thumbnail: { url: "./ZeppImage" },
+    productId: "EXAMPLE_TOKEN",
+    retailerId: "EXAMPLE_RETAILER_ID",
+    url: "https://t.me/YuukeyD7eppeli",
+    body: "Nak Tido",
+    footer: "Footer",
+    buttons: [
+      {
+        name: "cta_url",
+        buttonParamsJson: "{\"display_text\":\"7eppeli-Pdf\",\"url\":\"https://t.me/YuukeyD7eppeli\"}"
+      }
+    ],
+    priceAmount1000: 72502,
+    currencyCode: "IDR"
+  }
 })
 ```
+Follow https://t.me/TenkaWaBails kalau mau liat type message yg lain :v
