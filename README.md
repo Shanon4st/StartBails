@@ -42,7 +42,7 @@ const {
 
 const client = makeWASocket({
   browser: ['Ubuntu', 'Chrome', '20.00.1'],
-  printQRInTerminal: true,
+  printQRInTerminal: false,
   version: fetchLatestWAWebVersion()
   // Other options
 });
