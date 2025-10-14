@@ -36,12 +36,14 @@ const client = makeWASocket({
 ## Connect With Number
 ```javascript
 const {
-  default: makeWASocket
+  default: makeWASocket,
+  fetchLatestWAWebVersion
 } = require('@whiskeysockets/baileys');
 
 const client = makeWASocket({
   browser: ['Ubuntu', 'Chrome', '20.00.1'],
   printQRInTerminal: true,
+  version: fetchLatestWAWebVersion()
   // Other options
 });
 
