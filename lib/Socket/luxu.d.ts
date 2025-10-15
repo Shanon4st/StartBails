@@ -153,9 +153,7 @@ declare namespace imup {
 
     interface StatusMentionMessage {
         image?: string | { url: string };
-        video?: string | { url: string };
-        caption: string;
-        mentions: string[];
+        video?: string | { url: string }; 
     }
 
     interface OrderMessage {
